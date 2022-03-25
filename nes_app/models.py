@@ -9,7 +9,7 @@ class Instructor(models.Model):
         return self.email
     
     
-class Courses(models.Model):
+class Course(models.Model):
     title = models.CharField(max_length=100)
     rating = models.IntegerField()
     instructor = models.ForeignKey(
